@@ -23,8 +23,6 @@ namespace htmlProcessing
             HtmlTags = JsonSerializer.Deserialize < string[]>(jsonHtmlTags);
             var jsonHtmlVoidTags = File.ReadAllText("NewFolder/HtmlVoidTags.json");
             HtmlVoidTags = JsonSerializer.Deserialize<string[]>(jsonHtmlTags);
-
-           
         }
     }
 

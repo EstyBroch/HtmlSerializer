@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -49,5 +50,11 @@ namespace htmlProcessing
                 yield return current;
             }
         }
+        public override string ToString()
+        {
+            string classes = string.Join(" ", Classes);
+            return $"tag name: {Name} id: {Id} classes: {classes}";
+        }
     }
+    
 }
